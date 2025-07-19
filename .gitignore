@@ -1,0 +1,30 @@
+# Python virtual environment
+/venv/
+/.venv/
+/env/
+/.env/
+__pycache__/
+*.pyc
+
+# IDE and editor configuration files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Large data files - NEVER commit these
+*.csv
+*.json
+*.pdf
+*.zip
+
+# Secret files - Add any file containing keys or secrets
+# For example, if you had a secrets.py file
+secrets.py
+
+# Operating System files
+.DS_Store
+Thumbs.db
