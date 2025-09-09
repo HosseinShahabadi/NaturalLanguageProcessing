@@ -9,7 +9,7 @@ COMMENTS_FILE = './data/dropped_columns_comments.csv'
 PRODUCTS_FILE = './data/dropped_columns_products.csv'
 
 # The number of top unique products to select based on rating count
-NUM_TOP_PRODUCTS_TO_SELECT = 100
+NUM_TOP_PRODUCTS_TO_SELECT = 2200
 
 # Output file names
 FILTERED_COMMENTS_FILE = 'top_rated_comments.csv'

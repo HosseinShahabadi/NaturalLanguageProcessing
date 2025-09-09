@@ -4,6 +4,8 @@ from openai import OpenAI
 
 # --- Configuration ---
 
+# URL = "https://api.metisai.ir/openai/v1"
+URL = "https://api.gapgpt.app/v1"
 MODEL_NAME = "gpt-4.1-mini"  # The model you requested
 MAX_TOKENS_FOR_SUMMARY = 500 # A bit of buffer over 450
 
@@ -11,7 +13,7 @@ class ApiClient:
     def __init__(self):
         self.model = MODEL_NAME
         self.client = OpenAI(
-            base_url="https://api.metisai.ir/openai/v1",
+            base_url=URL,
             api_key=os.getenv("OPENAI_API_KEY") 
         )
 

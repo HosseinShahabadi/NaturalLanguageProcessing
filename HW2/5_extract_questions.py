@@ -11,6 +11,9 @@ from tqdm import tqdm
 # Ensure the OPENAI_API_KEY environment variable is set.
 api_key = os.getenv("OPENAI_API_KEY")
 
+# URL = "https://api.metisai.ir/openai/v1"
+URL = "https://api.gapgpt.app/v1"
+
 MODEL_NAME = "gpt-4.1-mini"  # The model you requested
 MAX_TOKENS_FOR_QUESTIONS = 500 # A bit of buffer over 450
 
@@ -25,7 +28,7 @@ class ApiClient:
     def __init__(self):
         self.model = MODEL_NAME
         self.client = OpenAI(
-            base_url="https://api.metisai.ir/openai/v1",
+            base_url=URL,
             api_key=os.getenv("OPENAI_API_KEY") 
         )
 
