@@ -22,6 +22,7 @@ __pycache__/
 *.zip
 *.png
 *.jpg
+*.txt
 
 # Secret files - Add any file containing keys or secrets
 # For example, if you had a secrets.py file
